@@ -1,0 +1,38 @@
+<header>
+  <md-toolbar>
+    <button md-icon-button (click)="goHome()">
+      <md-icon class="md-24">home</md-icon>
+    </button>
+
+    <div fxFlex
+         class="fxClass-all"
+         fxHide.sm fxHide.xs>
+
+      <button md-button
+              (click)="goToCalendar()">Calendar
+      </button>
+      <button md-button
+              (click)="goToGoJS()">Go JS
+      </button>
+    </div>
+
+    <div fxFlex
+         class="fxClass-all"
+         div fxLayout="row" fxHide.md fxHide.lg>
+
+      <button md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>more_vert</md-icon>
+      </button>
+      <md-menu #menu="mdMenu">
+
+        <button md-button
+                (click)="goToCalendar()">Calendar
+        </button>
+        <button md-button
+                (click)="goToGoJS()">Go JS
+        </button>
+      </md-menu>
+    </div>
+  </md-toolbar>
+  <br>
+</header>

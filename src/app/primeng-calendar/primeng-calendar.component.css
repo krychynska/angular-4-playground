@@ -1,0 +1,13 @@
+.box {
+  background: #00897b none repeat scroll 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.21);
+  margin: 0 auto 20px;
+  overflow: hidden;
+  min-height: 350px;
+  padding: 20px;
+  position: relative;
+}
+h3{
+  color: #fff;
+  margin-bottom: 10px;
+}
